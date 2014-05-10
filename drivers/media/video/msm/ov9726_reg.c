@@ -1,0 +1,101 @@
+/* Copyright (c) 2011, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ */
+
+#include "ov9726.h"
+struct reg_struct_type ov9726_init_settings_array[] = {
+	{0x0103, 0x01}, /*                */
+	{0x3026, 0x00}, /*                 */
+	{0x3027, 0x00}, /*                 */
+	{0x3002, 0xe8}, /*           */
+	{0x3004, 0x03}, /*           */
+	{0x3005, 0xff}, /*           */
+	{0x3703, 0x42},
+	{0x3704, 0x10},
+	{0x3705, 0x45},
+	{0x3603, 0xaa},
+	{0x3632, 0x2f},
+	{0x3620, 0x66},
+	{0x3621, 0xc0},
+	{0x0340, 0x03}, /*                       */
+	{0x0341, 0xC1}, /*                       */
+	{0x0342, 0x06}, /*                    */
+	{0x0343, 0x80}, /*                    */
+	{0x0202, 0x03}, /*                            */
+	{0x0203, 0x43}, /*                            */
+	{0x3833, 0x04},
+	{0x3835, 0x02},
+	{0x4702, 0x04},
+	{0x4704, 0x00}, /*            */
+	{0x4706, 0x08},
+	{0x5052, 0x01},
+	{0x3819, 0x6e},
+	{0x3817, 0x94},
+	{0x3a18, 0x00}, /*                     */
+	{0x3a19, 0x7f}, /*                     */
+	{0x404e, 0x7e},
+	{0x3631, 0x52},
+	{0x3633, 0x50},
+	{0x3630, 0xd2},
+	{0x3604, 0x08},
+	{0x3601, 0x40},
+	{0x3602, 0x14},
+	{0x3610, 0xa0},
+	{0x3612, 0x20},
+	{0x034c, 0x05}, /*                  */
+	{0x034d, 0x10}, /*                  */
+	{0x034e, 0x03}, /*                  */
+	{0x034f, 0x28}, /*                  */
+	{0x0340, 0x03}, /*                       */
+	{0x0341, 0xC1}, /*                       */
+	{0x0342, 0x06}, /*                    */
+	{0x0343, 0x80}, /*                    */
+	{0x0202, 0x03}, /*                            */
+	{0x0203, 0x43}, /*                            */
+	{0x0303, 0x01}, /*                   */
+	{0x3002, 0x00}, /*           */
+	{0x3004, 0x00}, /*           */
+	{0x3005, 0x00}, /*           */
+	{0x4801, 0x0f}, /*             */
+	{0x4803, 0x05}, /*             */
+	{0x4601, 0x16}, /*                    */
+	{0x3014, 0x05}, /*                          */
+	{0x3104, 0x80},
+	{0x0305, 0x04}, /*                    */
+	{0x0307, 0x64}, /*                   */
+	{0x300c, 0x02},
+	{0x300d, 0x20},
+	{0x300e, 0x01},
+	{0x3010, 0x01},
+	{0x460e, 0x81}, /*                 */
+	{0x0101, 0x01}, /*                   */
+	{0x3707, 0x14},
+	{0x3622, 0x9f},
+	{0x5047, 0x3D}, /*            */
+	{0x4002, 0x45}, /*            */
+	{0x5000, 0x06}, /*           */
+	{0x5001, 0x00}, /*           */
+	{0x3406, 0x00}, /*                 */
+	{0x3503, 0x13}, /*            */
+	{0x4005, 0x18}, /*            */
+	{0x4837, 0x21},
+	{0x0100, 0x01}, /*             */
+	{0x3a0f, 0x64}, /*            */
+	{0x3a10, 0x54}, /*            */
+	{0x3a11, 0xc2}, /*            */
+	{0x3a1b, 0x64}, /*            */
+	{0x3a1e, 0x54}, /*            */
+	{0x3a1a, 0x05}, /*              */
+};
+int32_t ov9726_array_length = sizeof(ov9726_init_settings_array) /
+	sizeof(ov9726_init_settings_array[0]);
+
